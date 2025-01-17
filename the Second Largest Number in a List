@@ -1,0 +1,12 @@
+def find_second_largest(lst):
+    first, second = float('-inf'), float('-inf')
+    for num in lst:
+        if num > first:
+            second = first
+            first = num
+        elif num > second and num != first:
+            second = num
+    return second
+
+# Example usage
+print(find_second_largest([1, 3, 4, 5, 0, 2]))  # Output: 4
