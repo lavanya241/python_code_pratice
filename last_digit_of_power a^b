@@ -1,20 +1,10 @@
-def last_digit_of_power(a, b):
-    if b == 0:
-        return 1
-    # Reduce the problem using modular arithmetic
-    a = a % 10
-    # Patterns repeat every 4 for any base 'a' Therefore, use the remainder of b % 4
-    b = b % 4
-    # If b % 4 is 0, it means the cycle has completed, use 4 instead
-   
-    if b == 0:
-        b = 4
-
-    # Calculate the result
-    result = (a ** b) % 10
-    return result
+def last_digit(a, b):
+    # Calculate a^b and return the last digit
+    return (a ** b) % 10
 
 # Example usage
-a = 3
-b = 10
-print(last_digit_of_power(a, b))  # Output: 9
+a = int(input("Enter the base (a): "))
+b = int(input("Enter the exponent (b): "))
+
+print(f"The last digit of {a}^{b} is: {last_digit(a, b)}")
+
