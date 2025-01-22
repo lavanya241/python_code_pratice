@@ -11,4 +11,4 @@ def is_palindrome(x):  # fuction defition
 
 # callling and printing the function
 print(is_palindrome(121))  # Output: True
-print(is_palindrome(-121))  # Output: False
+
