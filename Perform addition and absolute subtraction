@@ -1,0 +1,12 @@
+def add_and_absolute_subtract(a, b):
+    addition = a + b
+    subtraction = abs(a - b)  # Ensure non-negative result
+    return addition, subtraction
+
+# Example usage
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+add_result, sub_result = add_and_absolute_subtract(num1, num2)
+print(f"Addition: {add_result}")
+print(f"Subtraction (absolute value):{sub_result}")
