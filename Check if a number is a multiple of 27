@@ -1,0 +1,9 @@
+def is_multiple_of_27(number):
+    return number % 27 == 0
+
+# Example usage
+num = int(input("Enter a number: "))
+if is_multiple_of_27(num):
+    print(f"{num} is a multiple of 27.")
+else:
+    print(f"{num} is not a multiple of 27.")
